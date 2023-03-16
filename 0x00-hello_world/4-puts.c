@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
- *this is the main function
+ *main - entry point 
+ * return: always 0 (success)
  */
 int main(void)
 {
