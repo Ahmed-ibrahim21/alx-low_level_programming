@@ -17,5 +17,4 @@ _putchar((num % 10) + 48);
 num++;
 } while (num >= 0 && num <= 14);
 _putchar('\n'); }
-_putchar('\n');
 }
