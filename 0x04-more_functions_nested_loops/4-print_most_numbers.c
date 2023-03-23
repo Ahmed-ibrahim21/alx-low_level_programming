@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_numbers -a function that prints the numbers, from 0 to 9
+ * print_most_numbers -a function that prints the numbers, from 0 to 9
  */
 void print_most_numbers(void)
 {
 int num = 0;
 do {
-if(num != 2 || num != 4)
+if (num != 2 || num != 4)
 {
 _putchar(num + 48);
 }
