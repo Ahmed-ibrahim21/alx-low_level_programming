@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
  * _isupper -uppercase letters
  * @c : char to check
