@@ -4,8 +4,10 @@
  */
 void print_numbers(void)
 {
-for (int i = 0 ; i < 10 ; i++)
-{
-int j = _putchar(i);
-}
+int num = 0;
+do {
+_putchar(num + 48);
+num++;
+} while (num >= 0 && num <= 9);
+_putchar('\n');
 }
