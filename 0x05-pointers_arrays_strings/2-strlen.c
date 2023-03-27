@@ -10,6 +10,7 @@ int counting = 0;
 while (counter != '\0')
 {
 counting++;
+counter++;
 }
 return (counting);
 }
