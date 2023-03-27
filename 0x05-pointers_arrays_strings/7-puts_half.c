@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts -prints a string
+ * puts_half -prints a string
  * @str : string to print
  */
 void puts_half(char *str)
@@ -14,11 +14,11 @@ while (*p != '\0')
 len++;
 p++;
 }
-if(len % 2 == 0)
+if (len % 2 == 0)
 init = len / 2;
 else
 init = (len - 1) / 2;
-for(counter = init ;counter <= len ; counter++)
+for (counter = init ; counter <= len ; counter++)
 {
 _putchar(str[counter]);
 }
