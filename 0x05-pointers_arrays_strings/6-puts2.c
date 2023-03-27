@@ -9,7 +9,7 @@ int i = 0;
 int r = 0;
 int p;
 char *c = str;
-while(*c != '\0')
+while (*c != '\0')
 {
 c++;
 i++;
