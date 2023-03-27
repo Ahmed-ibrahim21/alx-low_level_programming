@@ -15,7 +15,7 @@ len++;
 p++;
 }
 init = len / 2;
-for (counter = init ; counter <= len ; counter++)
+for (counter = init ; counter < len ; counter++)
 {
 _putchar(str[counter]);
 }
