@@ -6,7 +6,7 @@
 void print_rev(char *s)
 {
 int tracker = 0;
-int counter ;
+int counter;
 while (*s != '\0')
 {
 tracker++;
