@@ -12,11 +12,11 @@ int c, c2;
 c = 0;
 while (dest[c])
 c++;
-for (c2 = 0 ; c2 < n && src[i] != '\0' ; i++)
+for (c2 = 0 ; c2 < n && src[c2] != '\0' ; c2++)
 {
-dest[c + i] = src[i];
+dest[c + c2] = src[c2];
 }
-dest[c + i] = '\0';
+dest[c + c2] = '\0';
 return (dest);
 }
 
