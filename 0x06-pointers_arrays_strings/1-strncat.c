@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest : first string
  * @src : second string
  * @n : number of bytes to copy
  * Return: the two string combined
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 int c, c2 = 0;
 c = 0;
