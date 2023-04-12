@@ -8,23 +8,20 @@
 
 char *_strdup(char *str)
 {
-if (str == "")
-return;
-int len = 0;
-int counter = 0;
-char *arr;
+int i = 0, size = 0;
+char *m;
 if (str == NULL)
 return (NULL);
-while (str[len])
-len++;
-arr = malloc(len  * sizeof(*str) + 1);
-if (arr == NULL || len == 0)
+for (; str[size] != '\0' ; size++)
+;
+m = malloc(size * sizeof(*str) + 1);
+if (m == 0)
 return (NULL);
-while (str[counter])
+else
 {
-arr[counter] = str[counter];
-counter++;
+for (; i < size ; i++)
+m[i] = str[i];
 }
-return (arr);
+return (m);
 }
 
