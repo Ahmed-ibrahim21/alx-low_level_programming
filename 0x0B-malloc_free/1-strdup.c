@@ -13,6 +13,6 @@ while (str[len])
 len++;
 cpy = malloc(len + 1);
 cpy = str;
-return (str);
+return (cpy);
 }
 
