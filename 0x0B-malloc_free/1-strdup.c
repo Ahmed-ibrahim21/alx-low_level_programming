@@ -5,16 +5,19 @@
  * @str : pointer to a string
  * Return: pointer or NULL
  */
+
 char *_strdup(char *str)
 {
-char *cpy;
+char *arr;
+char *p;
 int len = 0;
 while (str[len])
 len++;
-cpy = malloc(len + 1);
-if (len == 0 || cpy == 0)
-return (NULL);
-cpy = str;
-return (cpy);
+arr = malloc(len + 1);
+p = arr;
+while (*str)
+*p++ = *str++;
+*p = '\0';
+return (arr);
 }
 
