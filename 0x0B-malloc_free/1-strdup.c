@@ -17,7 +17,7 @@ if (str == NULL)
 return (NULL);
 while (str[len])
 len++;
-arr = malloc(len  *sizeof(*str) + 1);
+arr = malloc(len  * sizeof(*str) + 1);
 if (arr == NULL || len == 0)
 return (NULL);
 while (str[counter])
