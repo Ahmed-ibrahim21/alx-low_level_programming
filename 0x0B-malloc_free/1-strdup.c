@@ -12,6 +12,8 @@ int len = 0;
 while (str[len])
 len++;
 cpy = malloc(len + 1);
+if (len == 0 || cpy == 0)
+return (0);
 cpy = str;
 return (cpy);
 }
