@@ -8,20 +8,21 @@
 
 char *_strdup(char *str)
 {
+int len = 0;
+int counter = 0;
+char *arr;
 if (str == NULL)
 return (NULL);
-char *arr;
-char *p;
-int len = 0;
 while (str[len])
 len++;
-arr = malloc(len + 1);
-if (arr == NULL)
+arr = malloc(len * sizeof(*str) + 1);
+if (arr == NULL || len == 0)
 return (NULL);
-p = arr;
-while (*str)
-*p++ = *str++;
-*p = '\0';
+while (str[counter])
+{
+arr[counter] = str[counter];
+counter++;
+}
 return (arr);
 }
 
