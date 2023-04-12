@@ -8,7 +8,7 @@
 
 char *_strdup(char *str)
 {
-if (*str == NULL)
+if (str == NULL)
 return (NULL);
 char *arr;
 char *p;
@@ -16,6 +16,8 @@ int len = 0;
 while (str[len])
 len++;
 arr = malloc(len + 1);
+if (arr == NULL)
+return (NULL);
 p = arr;
 while (*str)
 *p++ = *str++;
