@@ -13,7 +13,7 @@ while (str[len])
 len++;
 cpy = malloc(len + 1);
 if (len == 0 || cpy == 0)
-return (0);
+return (NULL);
 cpy = str;
 return (cpy);
 }
