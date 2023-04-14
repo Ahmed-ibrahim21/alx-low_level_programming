@@ -33,8 +33,6 @@ while (*test1 != '\0')
 test1++;
 size2++;
 }
-if (n > size2)
-n = size2;
 p = malloc((size1 + size2) *sizeof(char) + 1);
 if (p == NULL)
 return (NULL);
