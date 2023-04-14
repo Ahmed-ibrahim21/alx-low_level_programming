@@ -15,7 +15,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int size1 = 0, i, size2 = 0, j;
+unsigned int size1 = 0, i, size2 = 0, j;
 char *p, *test1;
 if (s1 == NULL)
 s1 = "";
