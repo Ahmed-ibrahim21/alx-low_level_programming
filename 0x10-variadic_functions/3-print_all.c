@@ -37,7 +37,8 @@ void format_string(char *separator, va_list ap)
 {
 char *str = va_arg(ap, char *);
 switch ((int)(!str))
-case 1: str = "(nil)";
+case 1:
+str = "(nil)";
 printf("%s%s", separator, str);
 }
 /**
@@ -51,7 +52,7 @@ char *separator = "";
 va_list ap;
 token_t tokens[] = {
 {"c", format_char},
-{"i", dormat_int},
+{"i", format_int},
 {"f", format_float},
 {"s", format_string},
 {NULL, NULL}
@@ -69,7 +70,7 @@ separator = ", ";
 }
 j++;
 }
-i++
+i++;
 }
 printf("\n");
 va_end(ap);
